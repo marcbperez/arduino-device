@@ -1,0 +1,466 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:atmega328p
+LIBS:arduino-device-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Arduino Device"
+Date "2016-11-17"
+Rev "0.1.0"
+Comp "marcbperez, Widerware"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328P U?
+U 1 1 5912B1D0
+P 4600 3550
+F 0 "U?" H 4600 4350 60  0000 C CNN
+F 1 "ATMEGA328P" H 4600 2650 60  0000 C CNN
+F 2 "" H 4600 3550 60  0000 C CNN
+F 3 "" H 4600 3550 60  0000 C CNN
+	1    4600 3550
+	1    0    0    -1
+$EndComp
+$Comp
+L R R?
+U 1 1 5912B321
+P 2950 2950
+F 0 "R?" V 3030 2950 50  0000 C CNN
+F 1 "10K" V 2950 2950 50  0000 C CNN
+F 2 "" V 2880 2950 50  0000 C CNN
+F 3 "" H 2950 2950 50  0000 C CNN
+	1    2950 2950
+	0    1    1    0
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 5912B3CC
+P 2600 2750
+F 0 "#PWR01" H 2600 2600 50  0001 C CNN
+F 1 "+5V" H 2600 2890 50  0000 C CNN
+F 2 "" H 2600 2750 50  0000 C CNN
+F 3 "" H 2600 2750 50  0000 C CNN
+	1    2600 2750
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5912B3F4
+P 2500 4450
+F 0 "#PWR02" H 2500 4200 50  0001 C CNN
+F 1 "GND" H 2500 4300 50  0000 C CNN
+F 2 "" H 2500 4450 50  0000 C CNN
+F 3 "" H 2500 4450 50  0000 C CNN
+	1    2500 4450
+	1    0    0    -1
+$EndComp
+$Comp
+L Crystal Y?
+U 1 1 5912B493
+P 2950 3900
+F 0 "Y?" H 2950 4050 50  0000 C CNN
+F 1 "16MHZ" H 2950 3750 50  0000 C CNN
+F 2 "" H 2950 3900 50  0000 C CNN
+F 3 "" H 2950 3900 50  0000 C CNN
+	1    2950 3900
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	3100 2950 4000 2950
+Wire Wire Line
+	2800 2950 2600 2950
+Wire Wire Line
+	2600 2750 2600 3550
+Wire Wire Line
+	2600 3550 4000 3550
+Connection ~ 2600 2950
+Wire Wire Line
+	2500 3750 4000 3750
+Wire Wire Line
+	3200 3850 4000 3850
+Wire Wire Line
+	3200 3850 3200 4050
+Wire Wire Line
+	3200 4050 2800 4050
+$Comp
+L C C?
+U 1 1 5912B64A
+P 2500 4250
+F 0 "C?" H 2525 4350 50  0000 L CNN
+F 1 "22PF" H 2525 4150 50  0000 L CNN
+F 2 "" H 2538 4100 50  0000 C CNN
+F 3 "" H 2500 4250 50  0000 C CNN
+	1    2500 4250
+	1    0    0    -1
+$EndComp
+Connection ~ 2950 3750
+$Comp
+L GND #PWR03
+U 1 1 5912B6DF
+P 2200 4450
+F 0 "#PWR03" H 2200 4200 50  0001 C CNN
+F 1 "GND" H 2200 4300 50  0000 C CNN
+F 2 "" H 2200 4450 50  0000 C CNN
+F 3 "" H 2200 4450 50  0000 C CNN
+	1    2200 4450
+	1    0    0    -1
+$EndComp
+$Comp
+L C C?
+U 1 1 5912B6F6
+P 2800 4250
+F 0 "C?" H 2825 4350 50  0000 L CNN
+F 1 "22PF" H 2825 4150 50  0000 L CNN
+F 2 "" H 2838 4100 50  0000 C CNN
+F 3 "" H 2800 4250 50  0000 C CNN
+	1    2800 4250
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	2800 4050 2800 4100
+Connection ~ 2950 4050
+Wire Wire Line
+	2800 4400 2800 4450
+$Comp
+L GND #PWR04
+U 1 1 5912B781
+P 2800 4450
+F 0 "#PWR04" H 2800 4200 50  0001 C CNN
+F 1 "GND" H 2800 4300 50  0000 C CNN
+F 2 "" H 2800 4450 50  0000 C CNN
+F 3 "" H 2800 4450 50  0000 C CNN
+	1    2800 4450
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	2200 3650 4000 3650
+Wire Wire Line
+	2200 4450 2200 3650
+Wire Wire Line
+	2500 4400 2500 4450
+Wire Wire Line
+	2500 4100 2500 3750
+Wire Wire Line
+	5200 3550 6350 3550
+Wire Wire Line
+	6350 3550 6350 4450
+$Comp
+L GND #PWR05
+U 1 1 5912B9F5
+P 6350 4450
+F 0 "#PWR05" H 6350 4200 50  0001 C CNN
+F 1 "GND" H 6350 4300 50  0000 C CNN
+F 2 "" H 6350 4450 50  0000 C CNN
+F 3 "" H 6350 4450 50  0000 C CNN
+	1    6350 4450
+	1    0    0    -1
+$EndComp
+$Comp
+L +5V #PWR06
+U 1 1 5912BA0F
+P 6250 2750
+F 0 "#PWR06" H 6250 2600 50  0001 C CNN
+F 1 "+5V" H 6250 2890 50  0000 C CNN
+F 2 "" H 6250 2750 50  0000 C CNN
+F 3 "" H 6250 2750 50  0000 C CNN
+	1    6250 2750
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	5200 3750 6250 3750
+Wire Wire Line
+	6250 3750 6250 2750
+$Comp
+L C C?
+U 1 1 5912BA43
+P 6550 3100
+F 0 "C?" H 6575 3200 50  0000 L CNN
+F 1 "22PF" H 6575 3000 50  0000 L CNN
+F 2 "" H 6588 2950 50  0000 C CNN
+F 3 "" H 6550 3100 50  0000 C CNN
+	1    6550 3100
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	6250 2950 6550 2950
+Connection ~ 6250 2950
+Wire Wire Line
+	6550 3250 6550 4450
+$Comp
+L GND #PWR07
+U 1 1 5912BB05
+P 6550 4450
+F 0 "#PWR07" H 6550 4200 50  0001 C CNN
+F 1 "GND" H 6550 4300 50  0000 C CNN
+F 2 "" H 6550 4450 50  0000 C CNN
+F 3 "" H 6550 4450 50  0000 C CNN
+	1    6550 4450
+	1    0    0    -1
+$EndComp
+$Comp
+L CONN_01X14 P?
+U 1 1 5912C18A
+P 8000 3600
+F 0 "P?" H 8000 4350 50  0000 C CNN
+F 1 "CONN_01X14" V 8100 3600 50  0000 C CNN
+F 2 "" H 8000 3600 50  0000 C CNN
+F 3 "" H 8000 3600 50  0000 C CNN
+	1    8000 3600
+	1    0    0    -1
+$EndComp
+Text Label 7350 2950 0    60   ~ 0
+GPIO1
+Text Label 7350 3050 0    60   ~ 0
+GPIO2
+Text Label 7350 3150 0    60   ~ 0
+GPIO3
+Text Label 7350 3250 0    60   ~ 0
+GPIO4
+Text Label 7350 3350 0    60   ~ 0
+GPIO5
+Text Label 7350 3450 0    60   ~ 0
+GPIO6
+Text Label 7350 3550 0    60   ~ 0
+GPIO7
+Text Label 7350 3650 0    60   ~ 0
+GPIO8
+Text Label 7350 3750 0    60   ~ 0
+GPIO9
+Text Label 7350 3850 0    60   ~ 0
+GPIO10
+Text Label 7350 3950 0    60   ~ 0
+GPIO11
+Text Label 7350 4050 0    60   ~ 0
+GPIO12
+Text Label 7350 4150 0    60   ~ 0
+GPIO13
+Text Label 7350 4250 0    60   ~ 0
+GPIO14
+Wire Wire Line
+	7800 2950 7350 2950
+Wire Wire Line
+	7800 3050 7350 3050
+Wire Wire Line
+	7350 3150 7800 3150
+Wire Wire Line
+	7800 3250 7350 3250
+Wire Wire Line
+	7350 3350 7800 3350
+Wire Wire Line
+	7800 3450 7350 3450
+Wire Wire Line
+	7350 3550 7800 3550
+Wire Wire Line
+	7800 3650 7350 3650
+Wire Wire Line
+	7350 3750 7800 3750
+Wire Wire Line
+	7800 3850 7350 3850
+Wire Wire Line
+	7350 3950 7800 3950
+Wire Wire Line
+	7800 4050 7350 4050
+Wire Wire Line
+	7350 4150 7800 4150
+Wire Wire Line
+	7800 4250 7350 4250
+$Comp
+L CONN_01X14 P?
+U 1 1 5912D3B4
+P 9300 3600
+F 0 "P?" H 9300 4350 50  0000 C CNN
+F 1 "CONN_01X14" V 9400 3600 50  0000 C CNN
+F 2 "" H 9300 3600 50  0000 C CNN
+F 3 "" H 9300 3600 50  0000 C CNN
+	1    9300 3600
+	1    0    0    -1
+$EndComp
+Text Label 8650 2950 0    60   ~ 0
+GPIO28
+Text Label 8650 3050 0    60   ~ 0
+GPIO27
+Text Label 8650 3150 0    60   ~ 0
+GPIO26
+Text Label 8650 3250 0    60   ~ 0
+GPIO25
+Text Label 8650 3350 0    60   ~ 0
+GPIO24
+Text Label 8650 3450 0    60   ~ 0
+GPIO23
+Text Label 8650 3550 0    60   ~ 0
+GPIO22
+Text Label 8650 3650 0    60   ~ 0
+GPIO21
+Text Label 8650 3750 0    60   ~ 0
+GPIO20
+Text Label 8650 3850 0    60   ~ 0
+GPIO19
+Text Label 8650 3950 0    60   ~ 0
+GPIO18
+Text Label 8650 4050 0    60   ~ 0
+GPIO17
+Text Label 8650 4150 0    60   ~ 0
+GPIO16
+Text Label 8650 4250 0    60   ~ 0
+GPIO15
+Wire Wire Line
+	9100 2950 8650 2950
+Wire Wire Line
+	9100 3050 8650 3050
+Wire Wire Line
+	8650 3150 9100 3150
+Wire Wire Line
+	9100 3250 8650 3250
+Wire Wire Line
+	8650 3350 9100 3350
+Wire Wire Line
+	9100 3450 8650 3450
+Wire Wire Line
+	8650 3550 9100 3550
+Wire Wire Line
+	9100 3650 8650 3650
+Wire Wire Line
+	8650 3750 9100 3750
+Wire Wire Line
+	9100 3850 8650 3850
+Wire Wire Line
+	8650 3950 9100 3950
+Wire Wire Line
+	9100 4050 8650 4050
+Wire Wire Line
+	8650 4150 9100 4150
+Wire Wire Line
+	9100 4250 8650 4250
+Text Label 3450 3050 0    60   ~ 0
+GPIO2
+Text Label 3450 3150 0    60   ~ 0
+GPIO3
+Text Label 3450 3250 0    60   ~ 0
+GPIO4
+Text Label 3450 3350 0    60   ~ 0
+GPIO5
+Text Label 3450 3450 0    60   ~ 0
+GPIO6
+Wire Wire Line
+	4000 3050 3450 3050
+Wire Wire Line
+	3450 3150 4000 3150
+Wire Wire Line
+	3450 3250 4000 3250
+Wire Wire Line
+	4000 3350 3450 3350
+Wire Wire Line
+	4000 3450 3450 3450
+Text Label 3450 3950 0    60   ~ 0
+GPIO11
+Text Label 3450 4050 0    60   ~ 0
+GPIO12
+Text Label 3450 4150 0    60   ~ 0
+GPIO13
+Text Label 3450 4250 0    60   ~ 0
+GPIO14
+Wire Wire Line
+	4000 3950 3450 3950
+Wire Wire Line
+	4000 4050 3450 4050
+Wire Wire Line
+	4000 4150 3450 4150
+Wire Wire Line
+	4000 4250 3450 4250
+Text Label 5750 2950 2    60   ~ 0
+GPIO28
+Wire Wire Line
+	5750 2950 5200 2950
+Text Label 5750 3050 2    60   ~ 0
+GPIO27
+Wire Wire Line
+	5750 3050 5200 3050
+Text Label 5750 3150 2    60   ~ 0
+GPIO26
+Wire Wire Line
+	5750 3150 5200 3150
+Text Label 5750 3250 2    60   ~ 0
+GPIO25
+Wire Wire Line
+	5750 3250 5200 3250
+Text Label 5750 3350 2    60   ~ 0
+GPIO24
+Wire Wire Line
+	5750 3350 5200 3350
+Text Label 5750 3450 2    60   ~ 0
+GPIO23
+Wire Wire Line
+	5750 3450 5200 3450
+Text Label 5750 3650 2    60   ~ 0
+GPIO21
+Wire Wire Line
+	5750 3650 5200 3650
+Text Label 5750 3850 2    60   ~ 0
+GPIO19
+Wire Wire Line
+	5750 3850 5200 3850
+Text Label 5750 3950 2    60   ~ 0
+GPIO18
+Wire Wire Line
+	5750 3950 5200 3950
+Text Label 5750 4050 2    60   ~ 0
+GPIO17
+Wire Wire Line
+	5750 4050 5200 4050
+Text Label 5750 4150 2    60   ~ 0
+GPIO16
+Wire Wire Line
+	5750 4150 5200 4150
+Text Label 5750 4250 2    60   ~ 0
+GPIO15
+Wire Wire Line
+	5750 4250 5200 4250
+Text Label 3450 2950 0    60   ~ 0
+GPIO1
+Text Label 3450 3550 0    60   ~ 0
+GPIO7
+Text Label 3450 3650 0    60   ~ 0
+GPIO8
+Text Label 3450 3750 0    60   ~ 0
+GPIO9
+Text Label 3450 3850 0    60   ~ 0
+GPIO10
+Text Label 5750 3550 2    60   ~ 0
+GPIO22
+Text Label 5750 3750 2    60   ~ 0
+GPIO20
+$EndSCHEMATC
